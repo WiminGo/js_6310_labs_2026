@@ -22,7 +22,7 @@ function simpleTask() {
 // ===== ЗАДАНИЕ 2: Функции =====
 function getReviewerNumber(number, lab) {
     const totalStudents = 30;
-    return (number + lab) % totalStudents;
+    return ((number + lab - 1) % totalStudents) + 1;
 }
 
 function getVariant(number, variants) {
