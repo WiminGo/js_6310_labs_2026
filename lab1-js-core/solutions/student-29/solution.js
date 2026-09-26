@@ -18,6 +18,7 @@ function simpleTask() {
     console.log("myObject -", typeof myObject);
     console.log("myArray -", typeof myArray);
 }
+//simpleTask();
 
 // ===== ЗАДАНИЕ 2: Функции =====
 function getReviewerNumber(number, lab) {
@@ -157,7 +158,7 @@ function processArrays() {
     console.log("Сумма:", sum);
 
     // 6. Используйте sort для сортировки пользователей по возрасту (по убыванию)
-    const sortedByAge = [...users].sort((a, b) => b.age - a.age);
+    const sortedByAge = users.sort((a, b) => b.age - a.age);
     console.log("По возрасту (убыв.):", sortedByAge);
 
     // 7. Используйте метод для проверки, все ли пользователи старше 18 лет
@@ -479,7 +480,7 @@ function runTests() {
     ];
 
     validCases.forEach(email => {
-        console.assert(validateEmail(email) === true, `❌ должен быть валидным: ${email}`);
+        console.assert(validateEmail(email) === true, `должен быть валидным: ${email}`);
     });
 
     // ---------- НЕВАЛИДНЫЕ ----------
